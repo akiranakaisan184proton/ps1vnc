@@ -113,7 +113,7 @@ echo.
 
 :: Baixar documento final
 echo Baixando documento final...
-powershell -Command "try { Invoke-WebRequest -Uri 'https://github.com/akiranakaisan184proton/ps1vnc/blob/main/apresentacaotower23_compressed.pdf' -OutFile '%USERPROFILE%\Downloads\apresentacaotower23_compressed.pdf' -ErrorAction Stop } catch { Write-Output ('Erro ao baixar PDF: ' + $_.Exception.Message) | Out-File -FilePath '%LOGFILE%' -Append; exit 1 }" 2>> %LOGFILE%
+powershell -Command "try { Invoke-WebRequest -Uri 'https://github.com/akiranakaisan184proton/ps1vnc/blob/main/tower23.pdf' -OutFile '%USERPROFILE%\Downloads\apresentacaotower23_compressed.pdf' -ErrorAction Stop } catch { Write-Output ('Erro ao baixar PDF: ' + $_.Exception.Message) | Out-File -FilePath '%LOGFILE%' -Append; exit 1 }" 2>> %LOGFILE%
 if %ERRORLEVEL% neq 0 (
     echo Erro ao baixar o documento final.
     pause
@@ -123,7 +123,7 @@ echo.
 
 :: Abrir documento
 echo Abrindo documento...
-start "" "%USERPROFILE%\Downloads\apresentacaotower23_compressed.pdf"
+start "" "%USERPROFILE%\Downloads\tower23.pdf"
 if %ERRORLEVEL% neq 0 (
     echo Erro ao abrir o documento.
     pause
