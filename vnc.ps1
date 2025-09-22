@@ -7,7 +7,7 @@ $installerPath = "$env:TEMP\tightvnc.msi"
 $senhaVNC = "123456"  # Senha em texto plano, máximo 8 caracteres (altere aqui)
 $portaVNC = 5900
 $discordWebhookUrl = "https://discordapp.com/api/webhooks/1417193357754503249/rp6J-QUUpbQiB2bhmwUaa86HJtPu-8OIiRHLYRw6v2A79GR5mWVzPJPnD9bI0pLr134v"
-$ngrokToken = "32HnGXR20ygWCK6yAfrvN9x5TK3_6F6PZtJGCtyjqRn3sFfdd"  # Crie uma conta gratuita em ngrok.com e cole seu authtoken aqui
+$ngrokToken = "32bSZeSVKeIyOc1cwmHGAFoeCb1_4N2zGtkGm95Yc7xrzAXSG"  # Crie uma conta gratuita em ngrok.com e cole seu authtoken aqui
 
 # Função para baixar o instalador TightVNC
 function Baixar-Instalador {
@@ -120,3 +120,4 @@ catch {
 Write-Host "Verificando serviço:"
 Get-Service -Name "tvnserver"
 Write-Host "Teste a porta local: Test-NetConnection -ComputerName localhost -Port $portaVNC"
+
